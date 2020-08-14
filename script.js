@@ -45,11 +45,11 @@ function HamburgerAnimation(){
         root.style.setProperty("--animate-ham-before", "none")
         root.style.setProperty("--animate-ham-center", "none")
         root.style.setProperty("--animate-ham-after", "none")
-        menuItem.classList.add("animate-menu-items-close")
+        /*menuItem.classList.add("animate-menu-items-close")
         setTimeout(function(){
             menuItem.classList.add("menu-close")
             menuItem.classList.remove("animate-menu-items-close")
-        }, 500)
+        }, 500)*/
         
         hamburgerOpen = false
     }
