@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Animations</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="icons" class="w3-container">
+            <div onclick="move1('headphones')" id="headphones" class="icon w3-xlarge glyphicon glyphicon-headphones"></div>
+            <div onclick="move1('cd')" id="cd" class="icon w3-xlarge glyphicon glyphicon-cd"></div>
+            <div onclick="move1('sunglasses')" id="sunglasses" class="icon w3-xlarge glyphicon glyphicon-sunglasses"></div>
+        </div>
+        <div class="picked center" name="cd" id="picked-1"></div>
+    </div>
+
+    <div class="nav">
+        <div class="icons" class="w3-container">
+            <div onclick="move2('plane')" id="plane" class="icon w3-xlarge fa fa-plane"></div>
+            <div onclick="move2('rocket')" id="rocket" class="icon w3-xlarge fa fa-rocket"></div>
+            <div onclick="move2('car')" id ="car" class="icon w3-xlarge glyphicon fa fa-car"></div>
+        </div>
+        <div class="picked center" name="rocket" id="picked-2"></div>
+    </div>
+
+    <div class="nav">
+        <div class="icons" class="w3-container">
+            <div onclick="move3('coffee')" id="coffee" class="icon w3-xlarge fa fa-coffee"></div>
+            <div onclick="move3('beer')" id="beer" class="icon w3-xlarge fa fa-beer"></div>
+            <div onclick="move3('lemon')" id ="lemon" class="icon w3-xlarge glyphicon fa fa-lemon-o"></div>
+        </div>
+        <div class="picked center" name="beer" id="picked-3"></div>
+    </div>
+
+    <div onclick="HamburgerAnimation(this)" class="menu">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div id="menu-items-1" class="w3-container menu-items">
+            <div class="menu-item w3-large fa fa-user"></div>
+            <div class="menu-item w3-large fa fa-star"></div>
+            <div class="menu-item w3-large fa fa-thumbs-up"></div>
+        </div>
+    </div>
+    
+    <script src="icondata.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
